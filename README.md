@@ -1,5 +1,5 @@
 # Hyperbolic-VAE-with-Ranking-Loss
-Hyperbolic Variational Autoencoder with Ranking Loss
+This project is designed to analyse the effect of hyperbolic latent space on variational autoencoder. To design the new variational autoencoder, we added a modified ranking loss on VAE loss to strengthen the clustering property. Since modified ranking loss requires positive pair and negative sets, and our initial dataset MNIST does not have such relationships between classes, we redefined the positive pair and negative sets for this experiment - Here, the positive pair set is a set of pairs of same class characters in each batch, and the negative set of a data x is all other characters that are in different class. 
 
 
 
